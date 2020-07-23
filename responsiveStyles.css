@@ -24,13 +24,18 @@ main {
 }
 
 span {
-    text-transform: bold;
+    font-weight: lighter;
+}
+
+.bold {
+    font-weight: bolder;
 }
 
 section {
     grid-row: 2/3;
     grid-column: 1/4;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     padding: 20px;
     background-color: slategrey;
@@ -63,11 +68,19 @@ section {
     border-top: 20px solid green;
 }
 
-@media (max-width: 576px) {
+@media (min-width: 576px) {
+.welcome {
+    text-align: center;
+    }
 section {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 }
 
-@media ()
+@media (min-width: 992px) {
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+    }
