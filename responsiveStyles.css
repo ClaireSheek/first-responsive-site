@@ -19,16 +19,13 @@ main {
     justify-content: center;
     align-items: center;
     background-color: white;
-    font-size: 2em;
+    font-size: 4em;
     color: goldenrod;
 }
 
-span {
-    font-weight: lighter;
-}
-
 .bold {
-    font-weight: bolder;
+    font-weight: bold;
+    margin-left: 10px;
 }
 
 section {
@@ -51,21 +48,21 @@ section {
     grid-row: 2/3;
     grid-column: 1/2;
     margin: 30px;
-    border-top: 20px solid purple;
+    border-top: 30px solid purple;
 }
 
 .two {
     grid-row: 2/3;
     grid-column: 2/3;
     margin: 30px;
-    border-top: 20px solid goldenrod;
+    border-top: 30px solid goldenrod;
 }
 
 .three {
     grid-row: 2/3;
     grid-column: 3/4;
     margin: 30px;
-    border-top: 20px solid green;
+    border-top: 30px solid green;
 }
 
 @media (min-width: 576px) {
@@ -81,6 +78,6 @@ section {
 @media (min-width: 992px) {
     section {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
     }
